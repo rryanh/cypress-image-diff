@@ -208,7 +208,7 @@ const getCompareSnapshotsPlugin = (on, config) => {
   setupFolders()
 
   // Delete comparison and diff images to ensure a clean run
-  tearDownDirs()
+  if(config.TEAR_DOWN_DIRS) tearDownDirs()
 
   // Force screenshot resolution to keep consistency of test runs across machines
   on('before:browser:launch', (browser, launchOptions) => {
