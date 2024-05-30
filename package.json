@@ -1,7 +1,7 @@
 {
-  "name": "cypress-image-diff-js",
-  "version": "0.0.0",
-  "description": "Visual regression testing tool with cypress",
+  "name": "cypress-image-diff-js-fork",
+  "version": "0.0.2",
+  "description": "A fork of cypress-image-diff",
   "main": "./dist/command.js",
   "types": "./types/command.d.ts",
   "exports": {
@@ -21,7 +21,10 @@
       "default": "./dist/plugin.js"
     }
   },
-  "files": ["dist", "types"],
+  "files": [
+    "dist",
+    "types"
+  ],
   "bin": {
     "cypress-image-diff": "./bin/cypress-image-diff.js"
   },
@@ -33,7 +36,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uktrade/cypress-image-diff.git"
+    "url": "git+https://github.com/rryanh/cypress-image-diff.git"
   },
   "release": {
     "branches": [
@@ -49,12 +52,12 @@
     "image",
     "comparison"
   ],
-  "author": "Filippo Raimondi",
+  "author": "Ryan Hughes",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/uktrade/cypress-image-diff/issues"
+    "url": "https://github.com/rryanh/cypress-image-diff/issues"
   },
-  "homepage": "https://github.com/uktrade/cypress-image-diff#readme",
+  "homepage": "https://github.com/rryanh/cypress-image-diff#readme",
   "dependencies": {
     "@babel/runtime": "^7.12.5",
     "@colors/colors": "^1.5.0",
